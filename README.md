@@ -16,6 +16,11 @@ docker-compose -f docker-compose-standalone-init.yml up
 ```
 docker-compose up -d
 ```
+
+## Stop
+```
+docker-compose stop
+```
 **BE CAREFOUL! By default it exposes to internt (--rpcaddr "0.0.0.0" --wsaddr "0.0.0.0") so any one can access from outside.**
 
 # Usage
