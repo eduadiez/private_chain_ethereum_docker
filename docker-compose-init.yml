@@ -1,0 +1,12 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+    private-ethereum:
+        image: ethereum/client-go
+        container_name: "private-ethereum"
+        volumes:
+            - ./node:/root/.ethereum/
+            - ./files/genesis.json:/root/genesis.json:ro
+        command: --identity "private-ethereum" --nodiscover --maxpeers 0 --verbosity 3 --networkid=3333 init /root/genesis.json
+

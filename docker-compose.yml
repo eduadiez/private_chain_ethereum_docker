@@ -1,0 +1,18 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+    private-ethereum:
+        image: ethereum/client-go
+        container_name: "private-ethereum"
+        volumes:
+            - ./node:/root/.ethereum/
+            - ./files/genesis.json:/root/genesis.json:ro
+            - ./files/keystore:/root/.ethereum/keystore:rw
+            - ./files/password:/root/files/password:ro
+        ports:
+            - "30303:30303"
+            - "30303:30303/udp"
+            - "8545:8545"
+        command: --identity "private-ethereum" --rpc --rpcaddr "0.0.0.0" --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --ws --wsaddr "0.0.0.0" --nodiscover --maxpeers 0 --verbosity 3 --rpccorsdomain='*' --networkid=3333 --mine --minerthreads=1
+
