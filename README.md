@@ -9,7 +9,7 @@ git clone https://github.com/eduadiez/private_chain_ethereum_docker.git
 
 ## Init (only the first time)
 ```
-docker-compose -f docker-compose-standalone-init.yml up
+docker-compose -f docker-compose-init.yml up
 ```
 
 ## Start
