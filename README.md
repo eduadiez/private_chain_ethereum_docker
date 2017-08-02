@@ -75,6 +75,8 @@ null
 12
 
 # Send Transaction
+personal.unlockAccount(eth.accounts[0],"eduadiez")
+personal.unlockAccount(eth.accounts[1],"eduadiez")
 eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(1, "ether")})
 ```
 
