@@ -1,7 +1,7 @@
 # private chain ethereum docker
 Creation of a private blockchain under ethereum through docker (docker-compose)
 
-# Steeps to setup
+# Steps to setup
 ## Clone repo
 ```
 git clone https://github.com/eduadiez/private_chain_ethereum_docker.git
@@ -109,7 +109,7 @@ HTTP: `curl -X POST --data '{"jsonrpc":"2.0","method":"miner_start","params":[4]
 	}
 }
 ```
-# Conect to mist
+# Connect to mist
 ```
 ...\Ethereum Wallet.exe" --rpc http://localhost:8545 
 ```
