@@ -111,7 +111,8 @@ HTTP: `curl -X POST --data '{"jsonrpc":"2.0","method":"miner_start","params":[4]
 ```
 # Connect to mist
 ```
-...\Ethereum Wallet.exe" --rpc http://localhost:8545 
+(Windows) ...\Ethereum Wallet.exe" --rpc http://localhost:8545 
+(Mac) /Applications/Ethereum\ Wallet.app/Contents/MacOS/Ethereum\ Wallet --rpc http://localhost:8545
 ```
 # References and documentation
 - https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/private-chain.html
